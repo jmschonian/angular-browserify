@@ -4,7 +4,12 @@
   "description": "Sample app using angular with browserify.",
   "main": "index.js",
   "scripts": {
+  	"install": "napa",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "angular-route": "angular/bower-angular-route"
   },
   "author": "Ethan Way",
   "license": "BSD-2-Clause"
