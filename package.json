@@ -1,16 +1,20 @@
 {
   "name": "angular-browserify",
   "version": "0.0.0",
+  "author": "Ethan Way",
+  "license": "BSD-2-Clause",
   "description": "Sample app using angular with browserify.",
   "main": "index.js",
   "scripts": {
-  	"install": "napa",
+  	"install": "napa; browserify ./app/js/index.js > ./app/js/bundle.js",
+  	"start": "browserify ./app/js/index.js > ./app/js/bundle.js; beefy ./js/index.js:js/bundle.js --liv --cwd ./app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "napa": {
     "angular": "angular/bower-angular",
     "angular-route": "angular/bower-angular-route"
   },
-  "author": "Ethan Way",
-  "license": "BSD-2-Clause"
+  "dependencies": {
+
+  }
 }
