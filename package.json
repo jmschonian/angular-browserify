@@ -8,7 +8,7 @@
   "scripts": {
     "install": "napa; browserify ./app/js/index.js > ./app/js/bundle.js",
     "start": "browserify ./app/js/index.js > ./app/js/bundle.js; beefy ./js/index.js:js/bundle.js --liv --cwd ./app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start karma.conf"
   },
   "napa": {
     "angular": "angular/bower-angular",
