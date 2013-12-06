@@ -1,26 +1,17 @@
 'use strict';
 
-//require('angular/angular');
-//require('angular-route/angular-route');
-//var controllers = require('./controllers');
+var controllers = require('../app/js/controllers');
 
-// describe('MyCtrl1', function() {
-// 	var scope;
-//   var ctrl;
+describe('MyCtrl1', function() {
+	var scope;
+  var ctrl;
 
-// 	beforeEach(function() {
-// 		module('app');
-// 		scope = $rootScope.$new();
-// 		ctrl = $controller('MyCtrl1', { $scope: scope });
-// 	});
+	beforeEach(function() {
+		scope = {};
+		ctrl = new controllers.MyCtrl1(scope);
+	});
 
-// 	it('has a message scope variable', inject(function($rootScope, $controller) {
-// 		expect(scope.message).toBe('controller 1');
-// 	}));
-// });
-
-describe('app', function() {
-	it('works', function() {
-		expect(true).toBe(true);
+	it('has a message scope variable', function() {
+		expect(scope.message).toBe('controller 1');
 	});
 });

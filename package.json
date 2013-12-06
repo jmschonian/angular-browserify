@@ -6,18 +6,17 @@
   "description": "Sample app using angular with browserify.",
   "main": "index.js",
   "scripts": {
-  	"install": "napa; browserify ./app/js/index.js > ./app/js/bundle.js",
-  	"start": "browserify ./app/js/index.js > ./app/js/bundle.js; beefy ./js/index.js:js/bundle.js --liv --cwd ./app",
+    "install": "napa; browserify ./app/js/index.js > ./app/js/bundle.js",
+    "start": "browserify ./app/js/index.js > ./app/js/bundle.js; beefy ./js/index.js:js/bundle.js --liv --cwd ./app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "napa": {
     "angular": "angular/bower-angular",
     "angular-route": "angular/bower-angular-route"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
-  	"karma": "latest"
+    "karma": "latest",
+    "karma-browserify": "0.0.6"
   }
 }
